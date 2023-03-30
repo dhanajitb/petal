@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=1 python cifar10c.py --cfg cfgs/cifar10/petalsres.yaml

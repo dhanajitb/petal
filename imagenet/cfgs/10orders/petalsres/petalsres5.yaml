@@ -1,0 +1,35 @@
+CORRUPTION:
+  DATASET: imagenet
+  SEVERITY:
+  - 5
+  TYPE:
+  - motion_blur
+  - snow
+  - fog
+  - shot_noise
+  - defocus_blur
+  - contrast
+  - zoom_blur
+  - brightness
+  - frost
+  - elastic_transform
+  - glass_blur
+  - gaussian_noise
+  - pixelate
+  - jpeg_compression
+  - impulse_noise
+MODEL:
+  ADAPTATION: petalsres
+  ARCH: Standard_R50_swa
+OPTIM:
+  BETA: 0.9
+  LR: 0.01
+  METHOD: SGD
+  PERC: 0.003
+  RST: 0.001
+  SPW: 1e-11
+  STEPS: 1
+  WD: 0.0
+SAVE_DIR: ./output/petalsres/
+TEST:
+  BATCH_SIZE: 64

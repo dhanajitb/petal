@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python cifar10c.py --cfg cfgs/cifar10/petalfim.yaml

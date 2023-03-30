@@ -1,0 +1,31 @@
+CORRUPTION:
+  DATASET: imagenet3d
+  SEVERITY:
+  - 5
+  TYPE:
+  - xy_motion_blur
+  - iso_noise
+  - bit_error
+  - h265_crf
+  - low_light
+  - fog_3d
+  - color_quant
+  - h265_abr
+  - flash
+  - z_motion_blur
+  - far_focus
+  - near_focus
+MODEL:
+  ADAPTATION: petalfim
+  ARCH: Standard_R50_swa
+OPTIM:
+  BETA: 0.9
+  LR: 0.01
+  METHOD: SGD
+  PERC: 0.003
+  SPW: 1e-10
+  STEPS: 1
+  WD: 0.0
+SAVE_DIR: ./output/imagenet3d/petalfim/
+TEST:
+  BATCH_SIZE: 64

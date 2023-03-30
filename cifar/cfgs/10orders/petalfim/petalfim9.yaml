@@ -1,0 +1,38 @@
+CORRUPTION:
+  DATASET: cifar10
+  SEVERITY:
+  - 5
+  TYPE:
+  - contrast
+  - gaussian_noise
+  - defocus_blur
+  - zoom_blur
+  - frost
+  - glass_blur
+  - jpeg_compression
+  - fog
+  - pixelate
+  - elastic_transform
+  - shot_noise
+  - impulse_noise
+  - snow
+  - motion_blur
+  - brightness
+MODEL:
+  ADAPTATION: petalfim
+  ARCH: Standard_swa
+OPTIM:
+  METHOD: Adam
+  STEPS: 1
+  BETA: 0.9
+  LR: 1e-3
+  WD: 0.
+  MT: 0.999
+  PERC: 0.03
+  RST: 1.0
+  SPW: 1e-9
+  AP: 0.92
+TEST:
+  BATCH_SIZE: 200
+  
+SAVE_DIR: "./output/cifar10/gradual/petalfim"
