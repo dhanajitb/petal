@@ -101,7 +101,7 @@ bash run_petalfim_imagenet3dcc.sh
 ## Citation
 Please use the following to cite our work.
 ```bibtex
-@inproceedings{brahma2022probabilistic,
+@inproceedings{brahma2023probabilistic,
   title={A Probabilistic Framework for Lifelong Test-Time Adaptation},
   author={Brahma, Dhanajit and Rai, Piyush},
   booktitle={Proceedings of Conference on Computer Vision and Pattern Recognition},
