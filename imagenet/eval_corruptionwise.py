@@ -15,7 +15,7 @@ def read_file(filename):
             bri.append(float(line.split(":")[-2].split(",")[0].strip()))
             nll.append(float(line.split(":")[-1].strip()))
             corr_name_all.append(corr_name)
-    assert len(acc)==12
+    assert len(acc)==15
     print(corr_name_all)
     return np.mean(np.array(acc)), np.mean(np.array(bri)), np.mean(np.array(nll))
 def read_file_corr(filename, acc, bri, nll):
@@ -33,7 +33,7 @@ def read_file_corr(filename, acc, bri, nll):
                 bri[corr_name] = [float(line.split(":")[-2].split(",")[0].strip())]
                 nll[corr_name] = [float(line.split(":")[-1].strip())]
                 
-    assert len(acc)==12
+    assert len(acc)==15
     return acc, bri, nll
 
 def read_files(files):
